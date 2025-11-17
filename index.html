@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BullsEye! Human Capital Solutions Inc. · Senior Technology & Leadership Recruitment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Toronto-based boutique recruitment consultancy led by Jack Ponte, specializing in senior technology leadership and complete technology teams for startups, scale-ups and enterprises across the GTA, Canada and major US tech hubs." />
+  <meta name="keywords" content="Toronto tech recruiter, GTA executive recruiter, CTO search, VP Engineering recruitment, AI talent search, startup recruiter Toronto, senior software recruitment Canada US" />
+  <meta property="og:title" content="BullsEye! Human Capital Solutions Inc." />
+  <meta property="og:description" content="Toronto-based boutique recruitment consultancy led by Jack Ponte, specializing in senior technology leadership and complete technology teams for startups, scale-ups and enterprises across the GTA, Canada and major US tech hubs." />
+  <style>
+    :root {
+      --bg-main: #050509;
+      --bg-elevated: #111118;
+      --bg-soft: #181824;
+      --accent: #e31937;
+      --accent-soft: rgba(227,25,55,0.18);
+      --accent-soft-strong: rgba(227,25,55,0.28);
+      --accent-border: rgba(227,25,55,0.6);
+      --text-main: #f7f7fb;
+      --text-soft: #c0c2d5;
+      --text-mute: #8d8fa4;
+      --border-subtle: rgba(255,255,255,0.06);
+      --shadow-soft: 0 18px 40px rgba(0,0,0,0.55);
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-pill: 999px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-sans);
+      background: radial-gradient(circle at top left, #171724 0, #050509 52%, #02010a 100%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(5,5,12,0.96), rgba(5,5,12,0.86), rgba(5,5,12,0.0));
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.85rem 1.4rem 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-img {
+      height: 68px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-text-main {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .brand-text-sub {
+      font-size: 0.75rem;
+      color: var(--text-mute);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.4rem;
+      margin: 0;
+      padding: 0;
+      font-size: 0.84rem;
+      color: var(--text-soft);
+    }
+
+    nav a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.18rem;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(to right, var(--accent), #ff526d);
+      transition: width 0.18s ease-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      border-radius: var(--radius-pill);
+      padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(255,255,255,0.10);
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      background: radial-gradient(circle at top left, rgba(227,25,55,0.16), transparent 55%);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto 2rem;
+      padding: 1.4rem 1.4rem 3.2rem;
+    }
+
+    section {
+      margin-top: 2.8rem;
+    }
+
+    .section-inner {
+      background: radial-gradient(circle at top left, rgba(227,25,55,0.11), var(--bg-elevated));
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+      padding: 1.9rem 1.8rem 1.9rem;
+    }
+
+    .section-inner.soft {
+      background: rgba(7,7,15,0.96);
+    }
+
+    .section-header {
+      margin-bottom: 1.35rem;
+      max-width: 640px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.12rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(227,25,55,0.7);
+      color: var(--accent);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      background: radial-gradient(circle at top left, var(--accent-soft-strong), transparent 70%);
+      margin-bottom: 0.5rem;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      line-height: 1.2;
+      margin-bottom: 0.65rem;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 0.35rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      margin: 0 0 0.6rem;
+      color: var(--text-soft);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+      gap: 2.1rem;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-mute);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 1rem;
+      margin: 0.85rem 0 1rem;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .hero-highlight span {
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(10,10,20,0.96);
+    }
+
+    .hero-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .meta-pill {
+      font-size: 0.78rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 0.25rem 0.75rem;
+      color: var(--text-mute);
+      background: rgba(5,5,12,0.96);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.28rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: linear-gradient(135deg, var(--accent), #ff5c7a);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(227,25,55,0.55);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1.16rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(8,8,16,0.96);
+      color: var(--text-soft);
+      font-size: 0.86rem;
+      text-decoration: none;
+    }
+
+    .hero-note {
+      font-size: 0.78rem;
+      color: var(--text-mute);
+    }
+
+    .hero-photo {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      max-height: 340px;
+      background: radial-gradient(circle at top left, var(--accent-soft), #050509);
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 1.6rem;
+      align-items: flex-start;
+    }
+
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .pill-card {
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 0.75rem 0.8rem;
+      background: radial-gradient(circle at top left, rgba(227,25,55,0.08), rgba(8,8,16,0.95));
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .pill-card strong {
+      display: block;
+      margin-bottom: 0.15rem;
+      color: var(--text-main);
+      font-size: 0.88rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.6rem;
+    }
+
+    .two-col-reverse {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+    }
+
+    .card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-soft);
+      padding: 1.05rem 1.05rem;
+    }
+
+    .list-title {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-mute);
+      margin: 0.7rem 0 0.25rem;
+    }
+
+    ul {
+      margin: 0.1rem 0 0.7rem 1.1rem;
+      padding: 0;
+      color: var(--text-soft);
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.8rem;
+      align-items: start;
+    }
+
+    .about-photo {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+      box-shadow: var(--shadow-soft);
+      object-fit: cover;
+      max-height: 320px;
+    }
+
+    .about-meta {
+      font-size: 0.78rem;
+      color: var(--text-mute);
+    }
+
+    .specializations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .special-card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: rgba(9,9,18,0.96);
+      padding: 1rem 1.0rem 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .special-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.16rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-mute);
+      margin-bottom: 0.45rem;
+    }
+
+    .special-card h3 {
+      font-size: 0.98rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .testimonial {
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: radial-gradient(circle at top left, rgba(227,25,55,0.10), rgba(10,10,20,0.98));
+      padding: 0.9rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .testimonial p {
+      margin-bottom: 0.5rem;
+      color: var(--text-soft);
+    }
+
+    .testimonial strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.9rem;
+    }
+
+    .testimonial span {
+      font-size: 0.8rem;
+      color: var(--text-mute);
+    }
+
+    .referrals-note {
+      font-size: 0.86rem;
+      color: var(--text-soft);
+      margin-top: 0.4rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.6rem;
+      align-items: flex-start;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      color: var(--text-mute);
+      display: block;
+      margin-bottom: 0.22rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(6,6,14,0.95);
+      padding: 0.55rem 0.65rem;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: var(--text-mute);
+      margin-top: 0.4rem;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .contact-info p {
+      margin-bottom: 0.45rem;
+    }
+
+    .contact-logo-wrap {
+      margin-top: 1.1rem;
+      text-align: right;
+    }
+
+    .footer-logo {
+      height: 120px;
+      width: auto;
+      display: inline-block;
+    }
+
+    footer {
+      padding: 1.5rem 1.4rem 2.2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      background: radial-gradient(circle at top, rgba(227,25,55,0.18), #050509 38%, #020109 100%);
+      color: var(--text-mute);
+      font-size: 0.8rem;
+    }
+
+    footer .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a {
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 900px) {
+      .hero-layout,
+      .overview-grid,
+      .two-col,
+      .about-layout,
+      .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-layout {
+        gap: 1.5rem;
+      }
+
+      .specializations-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .testimonial-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contact-logo-wrap {
+        text-align: left;
+      }
+
+      .footer-logo {
+        height: 96px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        position: static;
+      }
+
+      .nav-inner {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      main {
+        padding: 1.1rem 1.1rem 2.4rem;
+      }
+
+      .section-inner {
+        padding: 1.4rem 1.3rem 1.5rem;
+      }
+
+      .specializations-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .pill-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="brand-mark">
+        <img src="bullseye!.jpg" alt="BullsEye! logo" class="logo-img" />
+        <div>
+          <div class="brand-text-main">BullsEye! Human Capital Solutions Inc.</div>
+          <div class="brand-text-sub">Senior technology & leadership recruitment · Toronto · Canada · US</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#employers">For employers</a></li>
+          <li><a href="#candidates">For candidates</a></li>
+          <li><a href="#specializations">Specializations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#referrals">Referrals</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Contact Jack</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="section-inner">
+        <div class="hero-layout">
+          <div>
+            <div class="hero-kicker">Toronto-based · North America reach</div>
+            <h1>Senior technology & leadership recruitment that actually hits the mark.</h1>
+            <p>
+              BullsEye! Human Capital Solutions Inc. is a boutique consultancy led by <strong>Jack Ponte</strong>,
+              specializing in senior technology leadership and complete technology teams — from CTO, VP Engineering
+              and Heads of Engineering to software engineers, architects, AI and data leaders, DevOps, security,
+              QA, business analysts and other modern technology roles across the GTA, Canada and the United States.
+            </p>
+            <div class="hero-highlight" aria-label="Key highlights">
+              <span>CTO · VP Engineering · CIO · Heads of Engineering & Product</span>
+              <span>Head of AI · Directors of Data & AI · AI/ML & LLM teams</span>
+              <span>Toronto & GTA focus, serving Canada & US tech hubs</span>
+            </div>
+            <div class="hero-meta-row">
+              <div class="meta-pill">Startup & scale-up friendly, relationship-based</div>
+              <div class="meta-pill">Deep technical understanding, not keyword-matching</div>
+              <div class="meta-pill">High-impact hires, not high-volume placements</div>
+            </div>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">Start a conversation with Jack</a>
+              <a href="#testimonials" class="btn-secondary">See what leaders say</a>
+            </div>
+            <p class="hero-note">
+              Prefer email or phone? Reach Jack directly at <a href="mailto:jponte@bullseyehc.com">jponte@bullseyehc.com</a>
+              or <a href="tel:+14165754434">416‑575‑4434</a>.
+            </p>
+          </div>
+          <div class="hero-photo" aria-hidden="true">
+            <img src="austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Senior leadership and technology team collaborating in a modern boardroom" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="section-inner soft">
+        <div class="overview-grid">
+          <div>
+            <div class="section-header">
+              <div class="eyebrow">The BullsEye! difference</div>
+              <h2>Relationship-first search for roles that move the needle.</h2>
+            </div>
+            <p>
+              BullsEye! exists for one purpose: help you land the high-impact hires that are hardest to find —
+              senior technology leadership and the technology teams around them.
+            </p>
+            <p>
+              Based in Toronto and focused on the GTA, Jack also supports clients across Canada and US tech hubs,
+              including New York and the Bay Area. He works especially well with founders, executives and investors
+              who care about long-term team performance and culture, not just “filling a seat”.
+            </p>
+            <p>
+              Fees are structured to stay accessible for startups and growing companies, while preserving a premium,
+              high-touch service. The model is largely contingency-based, with a strong preference for exclusive,
+              relationship-driven partnerships.
+            </p>
+          </div>
+          <div class="pill-grid">
+            <div class="pill-card">
+              <strong>Senior tech leadership & C-level</strong>
+              VP Technology, CTO, CIO, Heads of Engineering and architecture leaders who can set direction and build teams.
+            </div>
+            <div class="pill-card">
+              <strong>Complete technology departments</strong>
+              Founding engineers, developers, architects, QA, BA, DevOps, security, data and platform teams across modern stacks.
+            </div>
+            <div class="pill-card">
+              <strong>Toronto roots, North America reach</strong>
+              Deep network in the Toronto/GTA market, with mandates across Canada and US tech centres.
+            </div>
+            <div class="pill-card">
+              <strong>High-retention, high-impact hires</strong>
+              Focused on fit, personality and culture — building teams that perform and stay.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="employers">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="eyebrow">For employers</div>
+          <h2>A senior recruiter who can meet you at founder, VP or board level.</h2>
+          <p>
+            BullsEye! works with founders, CEOs, CTOs, HR leaders and investors who can’t afford another failed search.
+            From a single VP or CTO hire to building out an entire technology department, you work directly with Jack
+            — not a rotating team of juniors.
+          </p>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <h3>How Jack partners with you</h3>
+            <div class="list-title">For startups & scale-ups:</div>
+            <ul>
+              <li>Designing and building your first technology or product teams, from founding engineers onwards.</li>
+              <li>Helping you prioritize the right senior hires at the right time for your roadmap and funding stage.</li>
+              <li>Balancing budget realities with the need for high-calibre talent that can truly move the needle.</li>
+            </ul>
+            <div class="list-title">For established enterprises:</div>
+            <ul>
+              <li>Strengthening leadership with VP, Director and C-level technology hires.</li>
+              <li>Upgrading critical teams in software, data, security, cloud, infrastructure and product.</li>
+              <li>Providing targeted support on “must-get-right” roles where internal efforts have stalled.</li>
+            </ul>
+            <div class="list-title">Service models:</div>
+            <ul>
+              <li><strong>Exclusive contingency search</strong> for senior leadership and strategic roles.</li>
+              <li><strong>High-touch contingency search</strong> for senior engineers, architects, security and broader tech teams.</li>
+              <li><strong>Department and team build-outs</strong> for AI, DevOps, product engineering and core technology functions.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What clients say</h3>
+            <p>
+              “Jack has consistently proven to be an invaluable asset in helping us fill some of the most challenging
+              and unique technology roles… His dedication, professionalism, and results-driven mindset make him an
+              outstanding recruiter.”
+            </p>
+            <strong>Alejandro Navarro</strong>
+            <span>President / CIO / CTO / COO</span>
+            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.08);margin:0.7rem 0;" />
+            <p>
+              “Jack Ponte was instrumental in helping us recruit top engineering talent for our cybersecurity startup…
+              Thanks to his efforts, we built a high-performing engineering team.”
+            </p>
+            <strong>Kevin Oerton</strong>
+            <span>CEO & Co‑Founder</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="candidates">
+      <div class="section-inner soft">
+        <div class="two-col">
+          <div class="card" id="candidates">
+            <div class="section-header" style="margin-bottom:0.6rem;">
+              <div class="eyebrow">For candidates</div>
+              <h2>Senior careers handled with discretion and respect.</h2>
+            </div>
+            <p>
+              If you’re a senior engineer, architect, technology leader or specialist in AI, data, DevOps or security,
+              you’re not a line item. BullsEye! treats your search with honesty, context and a long-term view.
+            </p>
+            <div class="list-title">Who Jack typically works with:</div>
+            <ul>
+              <li>Senior technology leaders considering their next VP, CTO, CIO or Head of Engineering role.</li>
+              <li>Principal / staff engineers and architects who want impact, not just another similar title.</li>
+              <li>Experienced AI, ML, data, DevOps, security and platform specialists looking for the right environment.</li>
+            </ul>
+            <div class="list-title">How Jack works with you:</div>
+            <ul>
+              <li>Honest conversations about timing, compensation, growth and what you actually want next.</li>
+              <li>Guidance on positioning your experience for senior leadership, architecture or specialist roles.</li>
+              <li>Thoughtful interview prep and feedback so you’re never guessing where you stand.</li>
+              <li>Introductions only to roles that match your skills, values and stage of life — not spam.</li>
+            </ul>
+            <a href="#contact" class="btn-secondary">Share your profile with Jack</a>
+          </div>
+          <div>
+            <img src="michael-warf-f8egRYt5RGk-unsplash.jpg" alt="Senior professional working in a focused, modern environment" class="about-photo" />
+            <p class="about-meta">
+              Many of Jack’s candidate relationships go back years — people return when it’s time for their next move,
+              or when they’re building teams of their own.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-inner">
+        <div class="about-layout">
+          <div>
+            <div class="section-header">
+              <div class="eyebrow">About Jack</div>
+              <h2>25+ years building technology teams across Canada and the US.</h2>
+            </div>
+            <p>
+              Over 25 years, Jack has helped startups, scale-ups and large enterprises hire key people in software,
+              AI, data, DevOps, security and technology leadership. He is often called when the role has been open
+              too long, previous searches have failed, or the hire is simply too important to gamble on a high-volume
+              agency.
+            </p>
+            <p>
+              Jack is direct, pragmatic and deeply relationship-driven. He cares about business outcomes and long-term
+              fit, not just closing a requisition. He works closely with senior management to design teams, match
+              personalities and build high-performing environments where people can actually do their best work.
+            </p>
+            <div class="list-title">What you get working with Jack:</div>
+            <ul>
+              <li><strong>Senior-level attention on every search</strong> — no hand-off to junior recruiters.</li>
+              <li><strong>Fluent in technology and business</strong> — comfortable discussing architecture, org design and board-level impact.</li>
+              <li><strong>Department and team design</strong> — aligning skills, personalities and culture for long-term success.</li>
+              <li><strong>Radical transparency</strong> — clear feedback from the market and from candidates.</li>
+              <li><strong>Long-term relationships</strong> — many clients and candidates return for their next key hire or move.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="work-with-island-dtMrwG67cS8-unsplash.jpg" alt="Modern workspace symbolising focused partnership and trust" class="about-photo" />
+            <p class="about-meta">
+              Based in the Toronto GTA and serving all of North America, Jack thrives on building long-term partnerships
+              with founders, executives and HR leaders who want a recruiter they can actually trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specializations">
+      <div class="section-inner soft">
+        <div class="section-header">
+          <div class="eyebrow">Specializations</div>
+          <h2>From CTO and VP Engineering to the teams that surround them.</h2>
+          <p>
+            BullsEye! focuses on roles where depth matters: senior technology leadership and the engineering, AI,
+            data, DevOps, security and product teams they rely on. Modern stacks, legacy modernization, hybrid and
+            cloud-native — all in scope.
+          </p>
+        </div>
+        <div class="specializations-grid">
+          <div class="special-card">
+            <div class="special-chip">Tech leadership</div>
+            <h3>VP Tech, CTO, CIO & Heads of Engineering</h3>
+            <ul>
+              <li>Technology and engineering executives for startups, scale-ups and established enterprises.</li>
+              <li>“First strategic hire” leaders for early-stage companies setting up their tech function.</li>
+              <li>Leaders who can communicate with boards, investors and hands-on teams.</li>
+            </ul>
+          </div>
+          <div class="special-card">
+            <div class="special-chip">Software & architecture</div>
+            <h3>Modern engineering teams</h3>
+            <ul>
+              <li>Senior developers across Java, .NET, Node.js, Python, JavaScript/TypeScript, PHP/LAMP and more.</li>
+              <li>Software, solution and systems architects in cloud-native and hybrid environments.</li>
+              <li>Staff/principal engineers who own complex systems and mentor teams.</li>
+            </ul>
+          </div>
+          <div class="special-card">
+            <div class="special-chip">AI & data</div>
+            <h3>AI, ML, LLM/RAG & analytics</h3>
+            <ul>
+              <li>Heads of AI, Heads of Data, Directors of Data & AI and senior ICs.</li>
+              <li>AI/ML engineers, LLM/RAG specialists and data science leaders.</li>
+              <li>Early AI leadership hires to stand up or formalize the function.</li>
+            </ul>
+          </div>
+          <div class="special-card">
+            <div class="special-chip">DevOps & platform</div>
+            <h3>DevOps, SRE & cloud teams</h3>
+            <ul>
+              <li>DevOps, SRE, platform and cloud engineering leaders and senior ICs.</li>
+              <li>Infrastructure, networking and systems administrators modernizing legacy estates.</li>
+              <li>Engineers who can automate, harden and scale your platforms.</li>
+            </ul>
+          </div>
+          <div class="special-card">
+            <div class="special-chip">Security</div>
+            <h3>Security, AppSec & GRC</h3>
+            <ul>
+              <li>Security engineers, AppSec specialists and cloud security roles.</li>
+              <li>GRC and risk professionals working closely with technology leadership.</li>
+              <li>Security talent for high-compliance, high-risk environments.</li>
+            </ul>
+          </div>
+          <div class="special-card">
+            <div class="special-chip">Niche & legacy</div>
+            <h3>Hard-to-fill & legacy roles</h3>
+            <ul>
+              <li>Specialized or legacy-stack roles (including rare profiles such as Smalltalk developers).</li>
+              <li>Cross-functional roles blending software, data, infra and security.</li>
+              <li>Searches where the profile is unique and the stakes are high.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="eyebrow">Testimonials</div>
+          <h2>What leaders and partners say about working with Jack.</h2>
+          <p>
+            Real words from people who have trusted BullsEye! to build critical teams and leadership hires.
+          </p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>
+              “Jack has consistently proven to be an invaluable asset in helping us fill some of the most challenging
+              and unique technology roles. His ability to understand the specific needs of our business, combined with
+              his talent for finding the right candidates for highly specialized positions, is truly impressive.”
+            </p>
+            <strong>Alejandro Navarro</strong>
+            <span>President / CIO / CTO / COO</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              “Jack Ponte was instrumental in helping us recruit top engineering talent for our cybersecurity startup.
+              He quickly understood the requirements for complex roles and was dedicated to finding the perfect fit,
+              even for the most challenging positions. Thanks to his efforts, we built a high-performing engineering team.”
+            </p>
+            <strong>Kevin Oerton</strong>
+            <span>CEO & Co‑Founder</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              “Jack is one of the best IT recruiters I have worked with. He takes the time to get to know the company’s
+              culture, the role in detail and conducts extensive screening. By the time we see resumes, the first round
+              of interviews is essentially complete, saving us a great deal of time.”
+            </p>
+            <strong>Adela Doyle</strong>
+            <span>General Manager & Head of Global Recruitment</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              “Jack’s amazing – he takes the time to really understand your requirements and then goes out and finds
+              the best people to fit your needs. Easily the best recruiter I’ve ever worked with.”
+            </p>
+            <strong>Don Kittle</strong>
+            <span>VP Engineering</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              “Jack is the recruiter that you dream of finding if you are part of a growing organization. He finds good
+              people and finds them fast – no combing through hundreds of resumes to find just the right person. Great
+              skills with great references are the only people he delivers.”
+            </p>
+            <strong>Ilana Sprongl</strong>
+            <span>Executive & Leadership Coach</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              “One of the most driven and ethical recruiters I’ve come across. Jack takes the time to truly understand
+              both the technical and cultural needs of each role, and he approaches recruitment as a partnership, not a
+              transaction.”
+            </p>
+            <strong>Sanjay Arasaratnam</strong>
+            <span>Head of Customer Success</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="referrals">
+      <div class="section-inner soft">
+        <div class="two-col">
+          <div>
+            <div class="section-header">
+              <div class="eyebrow">Referral partner program</div>
+              <h2>Referrals are at the heart of BullsEye!.</h2>
+            </div>
+            <p>
+              Many of BullsEye!’s best introductions come from trusted people in Jack’s network — founders, executives,
+              candidates and friends who know great talent or great companies. The referral model is built to recognize
+              those contributions.
+            </p>
+            <div class="list-title">How referrals typically work:</div>
+            <ul>
+              <li>Introduce a company that needs to hire key technology or leadership talent.</li>
+              <li>Introduce a strong candidate for a senior or hard-to-fill role.</li>
+              <li>
+                When an introduction leads to a successful hire, Jack ensures your referral is appropriately recognized
+                and compensated.
+              </li>
+            </ul>
+            <p class="referrals-note">
+              To discuss referrals, mention it in your message via the contact form or email
+              <a href="mailto:jponte@bullseyehc.com">jponte@bullseyehc.com</a> directly.
+            </p>
+          </div>
+          <div class="hero-photo" aria-hidden="true">
+            <img src="redd-francisco-rt1R5wtY31Q-unsplash.jpg" alt="Handshake over a table representing trusted referral partnerships" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="eyebrow">Contact</div>
+          <h2>Reach out about your next critical hire — or your next move.</h2>
+          <p>
+            Whether you’re hiring or considering a new role yourself, the simplest way to start is a short conversation.
+            Share a bit of context below, or reach out directly by phone or email.
+          </p>
+        </div>
+        <div class="form-grid">
+          <div>
+            <form id="contact-form" action="https://formsubmit.co/jponte@bullseyehc.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New enquiry from BullsEyeHC.com" />
+              <input type="hidden" name="_captcha" value="false" />
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <label for="role">Company / Current role</label>
+              <input id="role" name="role" type="text" />
+              <label for="message">How can Jack help?</label>
+              <textarea id="message" name="message" placeholder="Tell Jack about the role, team or opportunity you’d like to discuss." required></textarea>
+              <button type="submit" class="btn-primary">Send message to Jack</button>
+              <p class="form-note">
+                When you submit this form, your message is securely emailed to Jack. He typically responds as soon as
+                possible based on active searches.
+              </p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <p><strong>Direct contact</strong></p>
+            <p>Attn: <strong>Jack Ponte</strong></p>
+            <p>Tel: <a href="tel:+14165754434">416‑575‑4434</a></p>
+            <p>Email: <a href="mailto:jponte@bullseyehc.com">jponte@bullseyehc.com</a></p>
+            <p>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/jack-ponte-b44344" target="_blank" rel="noopener">
+                linkedin.com/in/jack-ponte-b44344
+              </a>
+            </p>
+            <p style="margin-top:0.9rem;">
+              Based in the Toronto GTA and available for mandates across Canada and the United States.
+            </p>
+            <div class="contact-logo-wrap">
+              <img src="IMG_7231.jpeg" alt="Alternate BullsEye! logo" class="footer-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 BullsEye! Human Capital Solutions Inc. All rights reserved.</div>
+      <div>Toronto · Canada · Serving North America</div>
+    </div>
+  </footer>
+</body>
+</html>
